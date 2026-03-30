@@ -92,26 +92,40 @@ useEffect(() => {
       });
   }, [selectedProjectId]);
 
+   // === REFS & SYNC SCROLL (đã cải tiến - mượt mà hơn) ===
   const sidebarRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
   const timelineHeaderRef = useRef<HTMLDivElement>(null);
 
-  // Synchronize vertical scrolling
+  let isScrolling = false;   // flag chống loop
+
   const handleSidebarScroll = () => {
-    if (sidebarRef.current && timelineRef.current) {
-      timelineRef.current.scrollTop = sidebarRef.current.scrollTop;
-    }
+    if (isScrolling || !sidebarRef.current || !timelineRef.current) return;
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      timelineRef.current!.scrollTop = sidebarRef.current!.scrollTop;
+      isScrolling = false;
+    });
   };
 
   const handleTimelineScroll = () => {
-    if (sidebarRef.current && timelineRef.current) {
-      sidebarRef.current.scrollTop = timelineRef.current.scrollTop;
-    }
-    // Also sync horizontal scroll for header
-    if (timelineHeaderRef.current && timelineRef.current) {
-      timelineHeaderRef.current.scrollLeft = timelineRef.current.scrollLeft;
-    }
+    if (isScrolling || !sidebarRef.current || !timelineRef.current) return;
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      sidebarRef.current!.scrollTop = timelineRef.current!.scrollTop;
+      if (timelineHeaderRef.current) {
+        timelineHeaderRef.current.scrollLeft = timelineRef.current!.scrollLeft;
+      }
+      isScrolling = false;
+    });
   };
+
+  // Tự động sync lại khi danh sách task thay đổi (mở/rộng task)
+  useEffect(() => {
+    if (sidebarRef.current && timelineRef.current) {
+      timelineRef.current.scrollTop = sidebarRef.current.scrollTop;
+    }
+  }, [visibleTasks]);
 
   const scrollToTask = (taskId: number) => {
     const pos = taskPositions.get(taskId);
