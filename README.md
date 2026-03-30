@@ -1,20 +1,17 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BẢNG TIẾN ĐỘ CHI TIẾT 📊
 
-# Run and deploy your AI Studio app
+Ứng dụng quản lý tiến độ dự án, Gantt chart tương tác và theo dõi nhiệm vụ.
 
-This contains everything you need to run your app locally.
+## ✨ Tính năng
+- Biểu đồ Gantt chuyên nghiệp
+- Theo dõi tiến độ KPI
+- Xuất báo cáo CSV
+- Giao diện responsive, đẹp mắt
 
-View your app in AI Studio: https://ai.studio/apps/8af398a8-466b-4b56-8f06-41251f78a1d9
+## 🌐 Demo trực tuyến (sau khi deploy)
+https://Gelex-Electric.github.io/BANGTIENDO
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Chạy local
+```bash
+npm install
+npm run dev
