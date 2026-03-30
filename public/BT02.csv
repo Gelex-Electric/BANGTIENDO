@@ -1,0 +1,5 @@
+id,taskName,startDate,endDate,duration,progress,assignee,parentId,predecessors,notes,source,isMilestone
+1,Nâng cấp hạ tầng mạng,2026-03-05,2026-03-20,16,100,Nguyễn Văn A,,,Hạ tầng mạng,,FALSE
+2,Cài đặt máy chủ,2026-03-15,2026-03-30,16,60,Trần Thị B,,,Máy chủ mới,,FALSE
+3,Kiểm tra kết nối,2026-03-25,2026-04-05,12,20,Lê Văn C,2,,Kết nối nội bộ,,FALSE
+4,Triển khai phần mềm,2026-04-01,2026-04-20,20,0,Phạm Văn D,2,3,Phần mềm quản lý,,FALSE

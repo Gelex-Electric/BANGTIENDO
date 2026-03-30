@@ -1,0 +1,6 @@
+id,taskName,startDate,endDate,duration,progress,assignee,parentId,predecessors,notes,source,isMilestone
+1,Khảo sát hiện trạng,2026-03-01,2026-03-10,10,100,Nguyễn Văn A,,,Hiện trạng thực tế,,FALSE
+2,Thiết kế hệ thống,2026-03-11,2026-03-25,15,80,Trần Thị B,1,,Bản vẽ kỹ thuật,,FALSE
+3,Lập kế hoạch thi công,2026-03-20,2026-04-05,17,45,Lê Văn C,1,2,Kế hoạch chi tiết,,FALSE
+4,Mua sắm vật tư,2026-03-25,2026-04-15,22,10,Phạm Văn D,,,Vật tư giai đoạn 1,,FALSE
+5,Thi công móng,2026-04-10,2026-05-10,31,0,Hoàng Văn E,,,Móng nhà,,FALSE
