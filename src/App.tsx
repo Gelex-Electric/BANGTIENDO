@@ -35,11 +35,11 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Fetch and parse CSV data based on selected project
-  useEffect(() => {
-    fetch(`/${selectedProjectId}.csv`)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to fetch /${selectedProjectId}.csv`);
-        return response.text();
+useEffect(() => {
+  fetch(`${import.meta.env.BASE_URL}${selectedProjectId}.csv`)
+    .then(response => {
+      if (!response.ok) throw new Error(`Failed to fetch ${import.meta.env.BASE_URL}${selectedProjectId}.csv`);
+      return response.text();
       })
       .then(csvData => {
         Papa.parse(csvData, {
