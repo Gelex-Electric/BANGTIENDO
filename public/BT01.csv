@@ -1,6 +1,21 @@
 id,taskName,startDate,endDate,duration,progress,assignee,parentId,predecessors,notes,source,isMilestone
-1,Khảo sát hiện trạng,2026-03-01,2026-03-10,10,100,Nguyễn Văn A,,,Hiện trạng thực tế,,FALSE
-2,Thiết kế hệ thống,2026-03-11,2026-03-25,15,80,Trần Thị B,1,,Bản vẽ kỹ thuật,,FALSE
-3,Lập kế hoạch thi công,2026-03-20,2026-04-05,17,45,Lê Văn C,1,2,Kế hoạch chi tiết,,FALSE
-4,Mua sắm vật tư,2026-03-25,2026-04-15,22,10,Phạm Văn D,,,Vật tư giai đoạn 1,,FALSE
-5,Thi công móng,2026-04-10,2026-05-10,31,0,Hoàng Văn E,,,Móng nhà,,FALSE
+1,"CÔNG TÁC TRIỂN KHAI THỰC HIỆN THI CÔNG XÂY LẮP ",2026-04-01,2026-07-22,113,0,,,,,,FALSE
+2,Công tác chuẩn bị mua sắm,2026-04-01,2026-07-07,98,0,,1,,,,FALSE
+3,"Đặt hàng cáp điện trung thế ",2026-04-01,2026-04-30,30,0,,2,,,,FALSE
+4,"Đặt hàng Tủ RMU 22kV ",2026-04-01,2026-07-07,98,0,,2,,,,FALSE
+5,"Đặt hàng Ống nhựa xoắn HDPE  ",2026-04-01,2026-04-10,10,0,,2,,,,FALSE
+6,"Chuẩn bị vật tư phần ngầm: Đổ các cấu kiện đúc sẵn: Tấm đan bảo vệ rãnh cáp ",2026-04-01,2026-04-30,30,0,,2,,,,FALSE
+7,"Nhân công ",2026-04-05,2026-04-08,4,0,,2,,,,FALSE
+8,"Máy móc ",2026-04-05,2026-04-08,4,0,,2,,,,FALSE
+9,Công tác đào rãnh cáp ngầm 22kV và đặt ống chờ,2026-04-05,2026-05-30,56,0,,1,,,,FALSE
+10,"Công tác chuẩn bị ",2026-04-05,2026-04-08,4,0,,9,,,,FALSE
+11,"Huy động máy khoan đường, máy xúc, máy trộn bê tông, máy hàn, ô tô tự đổ… ",2026-04-09,2026-04-12,4,0,,9,10,,,FALSE
+12,"Đào rãnh cáp ngầm 22kV, Lắp đặt ống HDPE và hoàn trả mặt bằng ",2026-04-13,2026-05-30,48,0,,9,11,,,FALSE
+13,"Khoan vị trí vượt đường giao thông ",2026-04-13,2026-05-30,48,0,,9,11,,,FALSE
+14,"Xây hố ga cáp ",2026-04-13,2026-05-30,48,0,,9,11,,,FALSE
+15,Lắp đặt: Tủ trung thế,2026-05-01,2026-07-22,83,0,,1,,,,FALSE
+16,"Công tác chuẩn bị ",2026-05-01,2026-05-02,2,0,,15,,,,FALSE
+17,Huy động máy cẩu,2026-05-01,2026-05-03,3,0,,15,,,,FALSE
+18,"Lắp đặt: Tủ trung thế 24kV ",2026-07-08,2026-07-22,15,0,,15,4,,,FALSE
+19,"Lắp đặt cáp ngầm 24kV; Đầu cáp ngầm; phụ kiện và đấu nối ",2026-05-04,2026-05-28,25,0,,15,17,,,FALSE
+20,"Hoàn tất việc lắp đặt, thí nghiệm và đấu nối vào hệ thống điện trung thế của PC Bắc Ninh. ",2026-05-29,2026-06-09,12,0,,15,19,,,FALSE
