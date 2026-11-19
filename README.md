@@ -10,3 +10,8 @@ git add .
 git commit -m "Cập nhật file"
 git push      # đẩy lên để máy kia lấy về
 ```
+
+## Quy tắc cho các phiên Claude
+
+Xem [CLAUDE.md](CLAUDE.md): mỗi phiên phải hỏi gắn vào thư mục có sẵn hoặc tạo mới,
+và luôn lưu log phiên vào `<thư-mục>/_logs/`.
